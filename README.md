@@ -1,304 +1,96 @@
 
-# Phase 3 Project Description
-
-Congratulations! You've made it through another _intense_ module, and now you're ready to show off your newfound Machine Learning skills!
-
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-3-project-v2-3/main/images/smart.gif)
-
-All that remains in Phase 3 is to put your new skills to use with another large project!
-
-In this project description, we will cover:
-
-* Project Overview
-* Deliverables
-* Grading
-* Getting Started
-
-## Project Overview
-
-For this project, you will engage in the full data science process from start to finish, solving a **classification** problem using a **dataset of your choice**.
-
-### Business Problem and Data
-
-Similar to the Phase 2 project, it is up to you to define a stakeholder and business problem. Unlike the Phase 2 project, you are also responsible for choosing a dataset.
-
-For complete details, see [Phase 3 Project - Choosing a Dataset](https://github.com/learn-co-curriculum/dsc-phase-3-choosing-a-dataset).
-
-### Key Points
-
-#### Classification
-
-Recall the distinction between *classification* and *regression* models:
-
- * Classification is used when the target variable is a *category*
- * Regression is used when the target variable is a *numeric value*
-
-(Categorical data may be represented in the data as numbers, e.g. 0 and 1, but they are not truly numeric values. If you're unsure, ask yourself "is a target value of 1 _one more than_ a target value of 0"; if it is one more, that is a regression target, if not, that is a classification target.)
-
-You already practiced performing a regression analysis in Phase 2, and you will have additional opportunities to work on regression problems in later phases, but **for this project, you must be modeling a classification problem**.
-
-#### Findings and Recommendations
-
-In the previous two projects, the framing was primarily *descriptive* and *inferential*, meaning that you were trying to understand the distributions of variables and the relationship between them. For this project you can still use these techniques, but make sure you are also using a ***predictive*** approach.
-
-A predictive *finding* might include:
-
-* How well your model is able to predict the target
-* What features are most important to your model
-
-A predictive *recommendation* might include:
-
-* The contexts/situations where the predictions made by your model would and would not be useful for your stakeholder and business problem
-* Suggestions for how the business might modify certain input variables to achieve certain target results
-
-#### Iterative Approach to Modeling
-
-The expectations from the Phase 2 project still stand:
-
-> You should demonstrate an iterative approach to modeling. This means that you must build multiple models. Begin with a basic model, evaluate it, and then provide justification for and proceed to a new model. After you finish refining your models, you should provide 1-3 paragraphs in the notebook discussing your final model.
-
-With the additional techniques you have learned in Phase 3, be sure to explore:
-
-1. Model features and preprocessing approaches
-2. Different kinds of models (logistic regression, k-nearest neighbors, decision trees, etc.)
-3. Different model hyperparameters
-
-At minimum you must build three models:
-
-* A simple, interpretable baseline model (logistic regression or single decision tree)
-* A more-complex model (e.g. random forest)
-* A version of either the simple model or more-complex model with tuned hyperparameters
-
-#### Classification Metrics
-
-**You must choose appropriate classification metrics and use them to evaluate your models.** Choosing the right classification metrics is a key data science skill, and should be informed by data exploration and the business problem itself. You must then use this metric to evaluate your model performance using both training and testing data.
-
-## Deliverables
-
-There are three deliverables for this project:
-
-* A **non-technical presentation**
-* A **Jupyter Notebook**
-* A **GitHub repository**
-
-The deliverables requirements are almost the same as in the Phase 1 and Phase 2 projects. ***The only difference between the Phase 2 and Phase 3 project checklist is that the "Regression Results" element has been replaced with an "Evaluation" element.***
-
-### Non-Technical Presentation
-
-Recall that the non-technical presentation is a slide deck presenting your analysis to ***business stakeholders***, and should be presented live as well as submitted in PDF form on Canvas.
-
-We recommend that you follow this structure, although the slide titles should be specific to your project:
-
-1. Beginning
-    - Overview
-    - Business and Data Understanding
-2. Middle
-    - Modeling
-    - **Evaluation**
-3. End
-    - Recommendations
-    - Next Steps
-    - Thank you
-
-Make sure that your discussion of classification modeling is geared towards a non-technical audience! Assume that their prior knowledge of machine learning is minimal. You don't need to explain the details of your model implementations, but you should explain why classification is useful for the problem context. Make sure you translate any metrics or feature importances into their plain language implications.
-
-The graded elements for the non-technical presentation are the same as in [Phase 1](https://github.com/learn-co-curriculum/dsc-phase-1-project-v2-3#deliverables) and Phase 2.
-
-### Jupyter Notebook
-
-Recall that the Jupyter Notebook is a notebook that uses Python and Markdown to present your analysis to a ***data science audience***. You will submit the notebook in PDF format on Canvas as well as in `.ipynb` format in your GitHub repository.
-
-The graded elements for the Jupyter Notebook are:
-
-* Business Understanding
-* Data Understanding
-* Data Preparation
-* Modeling
-* **Evaluation**
-* Code Quality
-
-### GitHub Repository
-
-Recall that the GitHub repository is the cloud-hosted directory containing all of your project files as well as their version history.
-
-The requirements are the same as in [Phase 1](https://github.com/learn-co-curriculum/dsc-phase-1-project-v2-3#github-repository) and Phase 2, except for the required sections in the `README.md`.
-
-For this project, the `README.md` file should contain:
-
-* Overview
-* Business and Data Understanding
-  * Explain your stakeholder audience and dataset choice here
-* Modeling
-* **Evaluation**
-* Conclusion
-
-Just like in Phase 1 and 2, the `README.md` file should be the bridge between your non technical presentation and the Jupyter Notebook. It should not contain the code used to develop your analysis, but should provide a more in-depth explanation of your methodology and analysis than what is described in your presentation slides.
-
-## Grading
-
-***To pass this project, you must pass each project rubric objective.*** The project rubric objectives for Phase 3 are:
-
-1. Attention to Detail
-2. ML Communication
-3. Data Preparation for Machine Learning
-4. Nonparametric and Ensemble Modeling
-
-### Attention to Detail
-
-Just like in Phase 1 and 2, this rubric objective is based on your completion of checklist items. ***In Phase 3, you need to complete 80% (8 out of 10) or more of the checklist elements in order to pass the Attention to Detail objective.***
-
-**NOTE THAT THE PASSING BAR IS HIGHER IN PHASE 3 THAN IT WAS IN PHASE 2!**
-
-The standard will increase with each Phase, until you will be required to complete all elements to pass Phase 5 (Capstone).
-
-#### Exceeds Objective
-
-90% or more of the project checklist items are complete
-
-#### Meets Objective (Passing Bar)
-
-80% of the project checklist items are complete
-
-#### Approaching Objective
-
-70% of the project checklist items are complete
-
-#### Does Not Meet Objective
-
-60% or fewer of the project checklist items are complete
-
-### ML Communication
-
-Recall that communication is one of the key data science "soft skills". In Phase 3, we are specifically focusing on ML Communication. We define ML Communication as:
-
-> Communicate the **performance** of and **insights** generated by machine learning models to diverse audiences via writing, live presentation, and visualization
-
-High-quality ML Communication includes rationale, results, limitations, and recommendations:
-
-* **Rationale:** Explaining why you are using machine learning rather than a simpler form of data analysis
-  * What about the problem or data is suitable for this form of analysis?
-  * For a data science audience, this includes your reasoning for the changes you applied while iterating between models.
-* **Results:** Describing the classification metrics
-  * You can report multiple metrics for a single model, but make sure that indicate a reason for which metrics you are using (and don't try to use all of them at once)
-  * For a business audience, make sure you connect any metrics to real-world implications. You do not need to get into the details of how the model works.
-  * For a data science audience, you don't need to explain what a metric is, but make sure you explain why you chose that particular one.
-* **Limitations:** Identifying the limitations and/or uncertainty present in your analysis
-  * Are there certain kinds of records where model performance is worse? If you used this model in production, what kinds of problems might that cause?
-  * In general, this should be more in-depth for a data science audience and more surface-level for a business audience.
-* **Recommendations:** Interpreting the model results and limitations in the context of the business problem
-  * What should stakeholders _do_ with this information?
-
-#### Exceeds Objective
-
-Communicates the rationale, results, limitations, and specific recommendations generated by a classification model
-
-> See above for an extended explanation of these terms.
-
-#### Meets Objective (Passing Bar)
-
-Successfully communicates model metrics without any major errors
-
-> The minimum requirement is to communicate the _results_, meaning at least one overall model metric for your final model. See the Approaching Objective section for an explanation of what a "major error" means.
-
-#### Approaching Objective
-
-Communicates model metrics with at least one major error
-
-> A major error means that some aspect of your explanation is fundamentally incorrect. For example, if you report a regression metric for a classification model, that would be a major error. Another example would be if you report the model's performance on the training data, rather than the model's performance on the test data.
-
-#### Does Not Meet Objective
-
-Does not communicate model metrics
-
-> It is not sufficient just to display the `classification_report` or confusion matrix for a given model. You need to focus on one or more specific metrics that are important for your business case.
-
-### Data Preparation for Machine Learning
-
-We define this objective as:
-
-> Applying appropriate preprocessing and feature engineering steps to tabular data in preparation for predictive modeling
-
-This builds on the data preparation requirement from the Phase 2 project; you still need to ensure that you have a strategy for dealing with missing and non-numeric data.
-
-For the Phase 3 project, make sure you also consider:
-
-* **Preventing Data Leakage:** As you prepare data for modeling, make sure that you are correctly applying data preparation techniques so that your model's performance on test data realistically represents how it would perform on unseen data. For scikit-learn transformers specifically, ***make sure that you do not fit the transformer on the test data***. Instead, fit the transformer on the training data and use it to transform both the train and test data.
-* **Scaling:** If you are using a distance-based model algorithm (e.g. kNN or logistic regression with regularization), make sure you scale your data prior to fitting the model.
-
-Feature engineering is encouraged but not required for this project.
-
-#### Exceeds Objective
-
-Goes above and beyond with data preparation, such as feature engineering or using pipelines
-
-> Relevant examples of feature engineering will depend on your choice of dataset and business problem.
-
-> Pipelines are the best-practice approach to data preparation that avoids leakage, but they can get complicated very quickly. We therefore do not recommend that you use pipelines in your initial modeling approach, but rather that you refactor to use pipelines if you have time.
-
-#### Meets Objective (Passing Bar)
-
-Successfully prepares data for modeling, using a final holdout dataset that is transformed by (but not fitted on) transformers used to prepare training data AND scaling data when appropriate
-
-> See the descriptions above for explanations of how to use transformers and scaling.
-
-#### Approaching Objective
-
-Prepares some data successfully, but has at least one major error
-
-> A major error means that some aspect of your data preparation is fundamentally incorrect. Some examples of major errors include: (1) fitting transformers on test data, (2) not performing a train-test split, (3) not scaling data that is used in a distance-based model.
-
-#### Does Not Meet Objective
-
-Does not prepare data for modeling
-
-> This includes projects where data is partially prepared, but the model is unable to run.
-
-### Nonparametric and Ensemble Modeling
-
-This builds on the linear modeling requirement from the Phase 2 project. Your project should consider the different types of models that have been covered in the course so far and whether they are appropriate or inappropriate for the dataset and business case you are working with.
-
-Your final model can still be a linear model (e.g. logistic regression) but you should explore at least one nonparametric model (e.g. decision tree) as well and articulate why one or the other is a better approach.
-
-#### Exceeds Objective
-
-Goes above and beyond in the modeling process, such as articulating why a given model type is best suited to the problem or correctly using scikit-learn models not covered in the curriculum
-
-> Another way you might go above and beyond would be to create custom Python classes, possibly inheriting from scikit-learn classes.
-
-#### Meets Objective (Passing Bar)
-
-Uses at least two types of scikit-learn model and tunes at least one hyperparameter in a justifiable way without any major errors
-
-> See the "Iterative Approach to Modeling" section above for a more-lengthy explanation.
-
-> Once again, ideally you would include written justifications for each model iteration, but at minimum the iterations must be _justifiable_.
-
-> For an explanation of "major errors", see the description under "Approaching Objective".
-
-#### Approaching Objective
-
-Builds multiple classification models with at least one major error
-
-> A major error means that some aspect of your modeling approach is fundamentally incorrect.
-
-> Once again, the number one major error to avoid is including the target as one of your features. If you are getting metrics that are "too good to be true", make sure that you removed the target (`y`) from your data before fitting the model.
-
-> Other examples of major errors include: using a numeric target value (since this is a classification project), not starting with a baseline model (e.g. proceeding directly to a Random Forest model), or not tuning hyperparameters in a justifiable way (e.g. reducing regularization on a model that is overfitting)
-
-#### Does Not Meet Objective
-
-Does not build multiple classification models
-
-## Getting Started
-
-Please start by reviewing the contents of this project description. If you have any questions, please ask your instructor ASAP.
-
-Once you are ready to begin the project, you will need to complete the Project Proposal.
-
-Recall that more information is available in [Phase 3 Project - Choosing a Dataset](https://github.com/learn-co-curriculum/dsc-phase-3-choosing-a-dataset).
-
-To get started with project development, create a new repository on GitHub. For this project, we recommend that you do not fork the template repository, but rather that you make a new repository from scratch, starting by going to [github.com/new](https://github.com/new).
-
-## Summary
-
-This project is an opportunity to expand your data science toolkit by evaluating, choosing, and working with new datasets. Spending time up front making sure you have a good dataset for a solvable problem will help avoid the major problems that can sometimes derail data science projects. You've got this!
+## PREDICTION OF SYRIATEL COMPANY CUSTOMER CHURN
+### Overview
+The aim of this project is to utilize machine learning to forecast the probability of customer churn for SyriaTel, a telecom company. By employing machine learning models, the project seeks to offer SyriaTel a practical plan to enhance their customer retention tactics and elevate overall customer satisfaction 
+
+
+### Business Understanding
+#### Business Problem
+Due to heightened competition in the telecommunications industry, SyriaTel is increasingly concerned with accurately forecasting customer churn as a means to maintain a competitive edge. Customer retention is of utmost importance to the company since it is more cost-effective to keep existing customers than to acquire new ones. By leveraging data analysis and predictive analytics, SyriaTel aims to uncover trends and signals that can help them foresee customer actions and take proactive steps to minimize churn rates. Thus, SyriaTel is in search of predictive machine learning models that can anticipate whether customers are likely to churn or not. This, in turn, will enable the company to implement preemptive measures for retaining these customers. The data used for this analysis will include information about customer demographics such as location and usage patterns, including call histories and charges. It is essential for SyriaTel to continually adapt and update its models to keep pace with evolving customer behavior and changes in the market landscape to ensure the effectiveness of their customer retention strategies..
+#### Objectives 
+* Create machine learning models that can predict customer churn by using data to analyze customer features.
+* Comparing the build machine learning models and determine the most accurate model in prediction.
+* The analysis aims to identify the specific features that have a significant impact on the customer churn rate in SyriaTel, provide valuable recommendations based on the findings hence help to mitigate churn rates in the company and improve customer retention.
+  
+### Data Understanding 
+The project utilizes historical customer data, including demographic information and transactional data of Seriatel telecom company. This data is used to build a predictive model that can classify customers as churned or non-churned. The data has 3333 rows and 21 columns and the company is based in California USA. The colunmn tites are as follows:
+
+- State: The state where the customer resides.
+- Area code: The area code associated with the customer's phone number.
+- International plan: A binary variable indicating whether the customer has an international calling plan (1) or not (0).
+- Voice mail plan: A binary variable indicating whether the customer has a voicemail plan (1) or not (0).
+- Number vmail messages: The number of voicemail messages the customer has.
+- Total day minutes: The total number of minutes the customer used during the daytime.
+- Total day calls: The total number of calls the customer made or received during the daytime.
+- Total day charge: The total charges incurred by the customer for daytime usage.
+- Total eve minutes: The total number of minutes the customer used during the evening.
+- Total eve calls: The total number of calls the customer made or received during the evening.
+- Total eve charge: The total charges incurred by the customer for evening usage.
+- Total night minutes: The total number of minutes the customer used during the night.
+- Total night calls: The total number of calls the customer made or received during the night.
+- Total night charge: The total charges incurred by the customer for night usage.
+- Total intl minutes: The total number of minutes the customer used for international calls.
+- Total intl calls**: The total number of international calls the customer made.
+- Total intl charge: The total charges incurred by the customer for international calls.
+- Customer service calls: The number of customer service calls made by the customer.
+- Churn: A binary variable indicating whether the customer has churned (1) or not (0).
+- Total_calls: The total number of calls made or received by the customer across all periods (day, evening, and night).
+- Total_charge: The total charges incurred by the customer across all usage periods.
+## Data processing 
+- We checked for missing values, duplicates, categorical and numerical values to ensure that data is clean and in correct formaat for modelling. 
+- We further removed the class imbalance from the data and standardize to make date Consistent and uniformity of modelling. 
+- Hence this proces This was done to ensured that the data is valid,accurate and complete for modelling
+- We also dropped the outliers that can affect the data and give wrong predictions. 
+- The chart shows boxplot after some outliers were dropped. 
+
+
+## Data Analysis 
+We visualized several columns on churn rates, voice mail and internation plan relationship with churn and calls made in United States to get more insights about our data
+
+
+- It can be seen that West virginia has highest calls of  `32523` and california the lowest with `10582` 
+- In average the calls from the chart above is `15,000.` 
+
+
+- It can be seen that most of the customers are loyal to the Serialtel company
+- This is because most of the counts are false based on churn rate count 
+
+
+- There is no much different by people who make international calls in terms of getting international plan.
+- In average there almost same number of people getting international plan from the most international calls and from the ones who do not make oftenly.
+
+
+- There is more customers loyalty by Voice mail plan subscribers due to lower churn rate 
+* Customers have higher rate of churn and higher probabiliy to swich from Seriatel in terms of international plan.  
+* This shows that customers are more happy with voice mail than international plan.   
+
+
+- There is strong relationship betwen calls and loyalty as most people making the calls are loyal to Syriatel company
+- This shows that there is lower probalility of switching among customers. 
+
+- The distribution of total ninutes a day, in the evening and at night is normal.
+- All the total calls made on diffrent times of the day have almost same mean.
+## Modelling
+Here we build three models used for predicting customer churn in Seriatel company.
+The three models are 
+1. Logistic regression which had accuracy rate `89.6%` on training data and `86.0%` to testing data but after crossvalidation with 5 folds testing data improved to `86.2%` and testing data dropped to `89.2%.`
+2. Decision tree classifier was another model which had `88.6%` accuracy level on training data and `92.5%` on testing data in predicting customer churn and not churn. After gridsearch hypertuning the training prediction improved to `90.4%` and `93.6%` testing accuracy. 
+3. Finally we build decision tree classifier model which achieved an accuracy level of `87.1%` on training data and testing data accuracy `of 87.2%`. After hypertuning random forest model its accuracy improved to `93.6%` on training data and `92.7%` on testing data. 
+We picked the the two best predicting models that is decision tree and random forest and tuned the hyperparameter using grid search. This helped in improving model performance and reduce any case of overfit. 
+
+## Evaluation 
+- From the above model we concluded that decison tree is the best model for be used by Seriatel in predicting customer churn due to its good perfomance. 
+- To futher check on the model perfomance we checked drew ROC curve to check for ROC accuracy and area under the curve. Here we found the roc score for logistic regression, decision tree and random forest classifier as `0.83, 0.88` and `0.91` respectively.
+- After hyperparameter tuning we picked decision tree classifier is indeed the best model for predicting customer churn in Seriatel since its accuracy imrproved after tuning with gridsearch. 
+- Random forest is a good model too but its too complex, time consuming, expensive and in this case overfitted after grid search tuning.
+
+
+
+ patters. 
+## Conclusion 
+- Decision tree classifier is the best model to be used by Seriatel company
+- From this analysis Seriatel company will be able to: 
+1. Make accurate customer churn prediction.
+2. Cost savings by developing customer retention strategies. 
+3. Ensure that there is customer retention.
+4. Develop business strategy and decision making since they will get customer insights and behavior
