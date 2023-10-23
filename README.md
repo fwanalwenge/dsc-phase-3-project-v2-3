@@ -1,5 +1,7 @@
 
 ## PREDICTION OF SYRIATEL COMPANY CUSTOMER CHURN
+![image](https://github.com/fwanalwenge/dsc-phase-3-project-v2-3/assets/134020486/4ee64e17-9dca-4f42-8735-8e19d19f0df1)
+
 ### Overview
 The aim of this project is to utilize machine learning to forecast the probability of customer churn for SyriaTel, a telecom company. By employing machine learning models, the project seeks to offer SyriaTel a practical plan to enhance their customer retention tactics and elevate overall customer satisfaction 
 
