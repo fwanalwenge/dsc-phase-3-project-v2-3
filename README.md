@@ -63,7 +63,7 @@ We visualized several columns on churn rates, voice mail and international plan 
 
 ![image](https://github.com/fwanalwenge/dsc-phase-3-project-v2-3/assets/134020486/d57a1c17-e46d-4e92-90ed-714cdc472092)
 
--There is not much difference between people who make international calls in terms of getting international plan.
+- There is not much difference between people who make international calls in terms of getting international plan.
 - On average there are almost the same number of people getting international plan from the most international calls compared to the ones who do not make international calls often
 
 ![image](https://github.com/fwanalwenge/dsc-phase-3-project-v2-3/assets/134020486/ce2665fd-bfc4-43a6-98ae-af7cedd46696)
