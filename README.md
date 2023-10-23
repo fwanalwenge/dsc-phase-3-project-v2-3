@@ -1,7 +1,8 @@
 
 ## PREDICTION OF SYRIATEL COMPANY CUSTOMER CHURN
 
-![image](https://github.com/fwanalwenge/dsc-phase-3-project-v2-3/assets/134020486/1d063474-7462-41e0-9573-31edb25f7c4f)
+![image](https://github.com/fwanalwenge/dsc-phase-3-project-v2-3/assets/134020486/3538d3d6-eccf-4a07-8021-72cc01d640b7)
+
 
 
 ### Overview
