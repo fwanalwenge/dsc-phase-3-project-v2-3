@@ -9,7 +9,7 @@ The aim of this project is to utilize machine learning to forecast the probabili
 Due to heightened competition in the telecommunications industry, SyriaTel is increasingly concerned with accurately forecasting customer churn as a means to maintain a competitive edge. Customer retention is of utmost importance to the company since it is more cost-effective to keep existing customers than to acquire new ones. By leveraging data analysis and predictive analytics, SyriaTel aims to uncover trends and signals that can help them foresee customer actions and take proactive steps to minimize churn rates. Thus, SyriaTel is in search of predictive machine learning models that can anticipate whether customers are likely to churn or not. This, in turn, will enable the company to implement preemptive measures for retaining these customers. The data used for this analysis will include information about customer demographics such as location and usage patterns, including call histories and charges. It is essential for SyriaTel to continually adapt and update its models to keep pace with evolving customer behavior and changes in the market landscape to ensure the effectiveness of their customer retention strategies.
 
 #### Methodology
-This project strictly follows the CRISP-DM framework, which provides a structured path encompassing phases like comprehension, data preparation, model development, assessment, and implementation. The project will explore a range of models, commencing with a fundamental logistic regression model and advancing to more complex alternatives such as Decision Trees. The performance evaluation will rely on key metrics including accuracy, precision, recall, and F1-score.
+This project strictly follows the CRISP-DM framework, which provides a structured path encompassing phases like comprehension, data preparation, model development, assessment, and implementation. The project will explore a range of models, commencing with a fundamental logistic regression model and advancing to more complex alternatives such as Decision Trees and Random Forest. The performance evaluation will rely on key metrics including accuracy, precision, recall, and F1-score.
 
 #### Objectives 
 * Create machine learning models that can predict customer churn by using data to analyze customer features.
@@ -17,7 +17,7 @@ This project strictly follows the CRISP-DM framework, which provides a structure
 * The analysis aims to identify the specific features that have a significant impact on the customer churn rate in SyriaTel, provide valuable recommendations based on the findings hence help to mitigate churn rates in the company and improve customer retention.
   
 ### Data Understanding 
-The project utilizes historical customer data, including demographic information and transactional data of Seriatel telecom company. This data is used to build a predictive model that can classify customers as churned or non-churned. The data has 3333 rows and 21 columns and the company is based in California USA. The colunmn tites are as follows:
+The project utilizes historical customer data, including demographic information and transactional data of SyriaTel telecom company. This data is used to build a predictive model that can classify customers as churned or non-churned. The data has 3333 rows and 21 columns and the company is based in California USA. The colunmn tites are as follows:
 
 - State: The state where the customer resides.
 - Area code: The area code associated with the customer's phone number.
@@ -54,13 +54,13 @@ We visualized several columns on churn rates, voice mail and international plan 
 ![image](https://github.com/fwanalwenge/dsc-phase-3-project-v2-3/assets/134020486/7fdc1d52-6d5e-41d3-a6d9-a4a122a1e53a)
 
 
-- It can be seen that most of the customers are loyal to the Syrialtel company
+- It can be seen that most of the customers are loyal to the SyrialTel company
 - This is because most of the counts are false based on churn rate count 
 
 ![image](https://github.com/fwanalwenge/dsc-phase-3-project-v2-3/assets/134020486/d57a1c17-e46d-4e92-90ed-714cdc472092)
 
 - There is no much different by people who make international calls in terms of getting international plan.
-- In average there almost same number of people getting international plan from the most international calls and from the ones who do not make oftenly.
+- On average there almost same number of people getting international plan from the most international calls compared to the ones who do not make oftenly.
 
 ![image](https://github.com/fwanalwenge/dsc-phase-3-project-v2-3/assets/134020486/ce2665fd-bfc4-43a6-98ae-af7cedd46696)
 
@@ -70,7 +70,7 @@ We visualized several columns on churn rates, voice mail and international plan 
 
 ![image](https://github.com/fwanalwenge/dsc-phase-3-project-v2-3/assets/134020486/f6eb6f95-2a8d-474e-823e-c95ffe69629e)
 
-- There is strong relationship betwen calls and loyalty as most people making the calls are loyal to Syriatel company
+- There is strong relationship betwen calls and loyalty as most people making the calls are loyal to SyriaTel company
 - This shows that there is lower probalility of switching among customers. 
 
 ## Modelling
@@ -84,20 +84,25 @@ We constructed three distinct models designed to predict customer churn within S
 Having identified the Decision Tree and Random Forest as the two best-performing models, we proceeded to fine-tune their hyperparameters using grid search. This optimization not only enhanced model performance but also mitigated the risk of overfitting, ensuring more reliable predictions.
 
 ## Evaluation 
-- From the above model we concluded that decison tree is the best model for be used by Syriatel in predicting customer churn due to its good perfomance. 
+- From the above model we concluded that decison tree is the best model for be used by SyriaTel in predicting customer churn due to its good perfomance. 
 - To futher check on the model perfomance we checked drew ROC curve to check for ROC accuracy and area under the curve. Here we found the roc score for logistic regression, decision tree and random forest classifier as `0.83, 0.88` and `0.91` respectively.
-- After hyperparameter tuning we picked decision tree classifier is indeed the best model for predicting customer churn in Seriatel since its accuracy imrproved after tuning with gridsearch. 
+- After hyperparameter tuning we picked decision tree classifier is indeed the best model for predicting customer churn in SyriaTel since its accuracy imrproved after tuning with gridsearch. 
 - Random forest is a good model too but its too complex, time consuming, expensive and in this case overfitted after grid search tuning.
   
 ![image](https://github.com/fwanalwenge/dsc-phase-3-project-v2-3/assets/134020486/c35b99a4-e521-4e7c-909b-e9452a6c516f)
 
 ## Conclusion and Recommendation
-- Decision tree classifier is the best model to be used by Syriatel company
-- From this analysis Syriatel company will be able to achieve : 
-1. Precise Customer Churn Prediction: The model's high accuracy ensures the effective identification of customers at risk of churning. This capability empowers Seriatel to take proactive steps to retain these customers, potentially reducing attrition and associated costs.
+- Decision tree classifier is the best model to be used by SyriaTel company
+- From this analysis SyriaTel company will be able to achieve : 
+1. Precise Customer Churn Prediction: The model's high accuracy ensures the effective identification of customers at risk of churning. This capability empowers SyriaTel to take proactive steps to retain these customers, potentially reducing attrition and associated costs.
 
-2. Cost-Efficient Strategies: With accurate churn prediction, Seriatel can strategically allocate resources for targeted retention efforts, such as personalized offers, loyalty programs, and improved customer service, specifically for at-risk customers. This targeted approach can lead to cost savings compared to deploying retention strategies across the entire customer base.
+2. Cost-Efficient Strategies: With accurate churn prediction, SyriaTel can strategically allocate resources for targeted retention efforts, such as personalized offers, loyalty programs, and improved customer service, specifically for at-risk customers. This targeted approach can lead to cost savings compared to deploying retention strategies across the entire customer base.
 
-3. Enhanced Customer Retention: Accurate churn prediction enables the company to implement proactive measures to retain valuable customers. By addressing customer concerns, resolving issues, and providing incentives before churn occurs, Seriatel has the opportunity to maintain a loyal customer base, potentially increasing customer satisfaction and loyalty.
+3. Enhanced Customer Retention: Accurate churn prediction enables the company to implement proactive measures to retain valuable customers. By addressing customer concerns, resolving issues, and providing incentives before churn occurs, SyriaTel has the opportunity to maintain a loyal customer base, potentially increasing customer satisfaction and loyalty.
 
 4. Informed Business Strategy: Accurate churn prediction offers insights into customer behavior and patterns, enabling the company to better understand the factors contributing to churn. This information informs data-driven business decisions, including product or service enhancements, improvements in the customer experience, and targeted marketing campaigns. These strategies are designed to reduce churn and enhance customer retention.
+
+## Next Steps
+- Investigate Alternative Algorithms: Explore different machine learning algorithms to enhance churn prediction accuracy.
+- Augment Data Collection: Gather additional data to boost the accuracy of churn prediction models.
+- Ongoing Model Assessment and Refinement: Continuously evaluate model performance, fine-tune parameters, and maintain models to ensure their accuracy and effectiveness in predicting customer churn.
