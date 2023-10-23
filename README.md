@@ -65,7 +65,7 @@ We visualized several columns on churn rates, voice mail and international plan 
 ![image](https://github.com/fwanalwenge/dsc-phase-3-project-v2-3/assets/134020486/ce2665fd-bfc4-43a6-98ae-af7cedd46696)
 
 - There is more customers loyalty by Voice mail plan subscribers due to lower churn rate 
-* Customers have higher rate of churn and higher probabiliy to swich from Syriatel in terms of international plan.  
+* Customers have higher rate of churn and higher probabiliy to switch from Syriatel in terms of international plan.  
 * This shows that customers are more happy with voice mail than international plan.   
 
 ![image](https://github.com/fwanalwenge/dsc-phase-3-project-v2-3/assets/134020486/f6eb6f95-2a8d-474e-823e-c95ffe69629e)
